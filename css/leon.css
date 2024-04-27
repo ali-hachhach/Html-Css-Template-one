@@ -1,9 +1,9 @@
 /* Start Variables */
 :root {
-  --main-color: #10cab7;
-  --secondary-color: #2c4755;
+  --main-color: #fffb1d;
+  --secondary-color: #ff0000;
   --section-padding: 60px;
-  --section-background: #f6f6f6;
+  --section-background: #ff0000;
   --main-duration: 0.5s;
 }
 /* End Variables */
@@ -147,10 +147,11 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(../images/landing.jpg);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
-  height: calc(100vh - 64px);
+  height:100vh;
   position: relative;
+
 }
 .landing .intro-text {
   position: absolute;
@@ -170,6 +171,10 @@ body {
 .landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
+  color:#ff0000 !important;
+}
+.landing .intro-text h2{
+  color: #ff0000;
 }
 /* End Landing Section */
 /* Start Features */
@@ -196,7 +201,7 @@ body {
 }
 .features .feat p {
   line-height: 1.8;
-  color: #777;
+  color: rgb(255, 10, 10);
   font-size: 17px;
 }
 /* End Features */
@@ -220,6 +225,13 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  .landing {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+  background-position: 850px;
+}
 }
 .services .services-content .srv i {
   color: var(--main-color);
